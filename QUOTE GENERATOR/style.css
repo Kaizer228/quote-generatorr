@@ -1,0 +1,111 @@
+ 
+
+ *{
+   
+    font-family: 'Poppins', sans-serif;
+ 
+ }
+
+
+    button {
+            
+  display: flex;
+  margin: auto;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+button:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all .5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+
+ body{
+margin-top: 100px;
+}
+
+
+.container{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17.5px );
+    -webkit-backdrop-filter: blur( 17.5px );
+      border-radius: 10px;
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    margin: auto;
+    max-width: 400px;
+    height: 600px;
+    text-align: center;
+    border-radius: 30px;
+   }
+
+.header{
+    margin-bottom: 100px;
+    font-size: 23px;
+    font-style: italic;
+   }
+   
+h1{
+   margin-top: 20px;
+   font-size: 25px;
+   }
+
+   #RandomResult{
+    margin-bottom: 100px;
+   }
+
+   @media only screen and (max-width: 600px) {
+  body {
+   margin-top: 10px;
+  }
+}
+
+ 
